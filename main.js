@@ -6,6 +6,8 @@ let menu1 = document.querySelector(".link1");
 let menu2 = document.querySelector(".link2");
 let menu3 = document.querySelector(".link3");
 let menu4 = document.querySelector(".link4");
+let clicktoabout = document.querySelector(".not-active");
+let chatbutton = document.querySelector(".page2-link");
 
 button.addEventListener('click' , function() {
     menu1.classList.toggle("menu-links2");
@@ -15,4 +17,8 @@ button.addEventListener('click' , function() {
     ma.classList.toggle("remove");
     tepa.classList.toggle("top2");
     menubox.classList.toggle("menu2");
+})
+
+chatbutton.addEventListener('click' , function(){
+    clicktoabout.classList.toggle("active");
 })
